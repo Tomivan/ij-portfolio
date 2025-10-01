@@ -1,0 +1,14 @@
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+}
+.right {
+    display: flex;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    padding-right: 1em;
+}
