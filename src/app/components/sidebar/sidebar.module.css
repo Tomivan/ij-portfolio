@@ -1,0 +1,26 @@
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+}
+.right {
+    display: flex;
+}
+.ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 0.5em;
+}
+.li {
+    padding-right: 1em;
+}
+.li:hover {
+    color: #1193d4;
+}
+.resume {
+    background: #1193d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    width: 10vw;
+}

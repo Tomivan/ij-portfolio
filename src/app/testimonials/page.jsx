@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Sidebar from '../components/sidebar/sidebar.component';
-import './skills.styles.css';
+import './testimonials.styles.css';
 
 const Testimonials = () => {
     return(

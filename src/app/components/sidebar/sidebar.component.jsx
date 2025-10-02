@@ -1,22 +1,22 @@
 "use client"
 
 import React from "react";
-import "./sidebar.styles.css";
+import Link from "next/link";
+import  styles from "./sidebar.module.css";
 
 const Sidebar = () => {
     return(
-        <div className="sidebar">
-            <h1>Ijeoma Ejinwa</h1>
-            <div className="right">
-                <ul>
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Projects</li>
-                    <li>Skills</li>
-                    <li>Testimonials</li>
-                    <li>Contact</li>
+        <div className={styles.sidebar}>
+            <h1><Link href="/">Ijeoma Ejinwa</Link></h1>
+            <div className={styles.right}>
+                <ul className={styles.ul}>
+                    <li className={styles.li}><Link href="/experience">Experience</Link></li>
+                    <li className={styles.li}><Link href="/works">Projects</Link></li>
+                    <li className={styles.li}><Link href="/skills">Skills</Link></li>
+                    <li className={styles.li}><Link href="/testimonials">Testimonials</Link></li>
+                    <li className={styles.li}><Link href="/contact"> Contact</Link></li>
                 </ul>
-                <button>Resume</button>
+                <button className={styles.resume}>Resume</button>
             </div>
         </div>
     )
