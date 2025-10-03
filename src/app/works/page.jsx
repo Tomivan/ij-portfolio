@@ -2,32 +2,32 @@
 
 import React from 'react';
 import Sidebar from '../components/sidebar/sidebar.component';
-import './work.styles.css';
+import styles from'./work.module.css';
 
 const Works = () => {
     return(
-        <div className="work">
+        <div className={styles.work}>
             <Sidebar />
-            <div className="work-top">
+            <div className={styles.workTop}>
                 <h1>My Work</h1>
                 <p>Explore a selection of projects</p>
             </div>
-            <div className="work-bottom">
+            <div className={styles.workBottom}>
                 <h2>Community Management </h2>
-                <section className="section">
-                    <div className="card">
+                <section className={styles.section}>
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
                         events</p>
                     </div>
-                    <div className="card">
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
                         events</p>
                     </div>
-                    <div className="card">
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
@@ -35,20 +35,20 @@ const Works = () => {
                     </div>
                 </section>
                 <h2>Data Analysis </h2>
-                <section className="section">
-                    <div className="card">
+                <section className={styles.section}>
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
                         events</p>
                     </div>
-                    <div className="card">
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
                         events</p>
                     </div>
-                    <div className="card">
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
@@ -56,20 +56,20 @@ const Works = () => {
                     </div>
                 </section>
                 <h2>Digital Startegy</h2>
-                <section className="section">
-                    <div className="card">
+                <section className={styles.section}>
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
                         events</p>
                     </div>
-                    <div className="card">
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 
                         events</p>
                     </div>
-                    <div className="card">
+                    <div className={styles.card}>
                         <img src='' alt='' />
                         <p>Community Engagement Design</p>
                         <p>Increased community engagement by 40% <br /> through targeted content and interactive <br /> 

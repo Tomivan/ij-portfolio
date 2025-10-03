@@ -1,24 +1,29 @@
 "use client"
 
 import React from "react";
-import Link from "next/link";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import  styles from "./sidebar.module.css";
 
 const Sidebar = () => {
     return(
-        <div className={styles.sidebar}>
-            <h1><Link href="/">Ijeoma Ejinwa</Link></h1>
-            <div className={styles.right}>
-                <ul className={styles.ul}>
-                    <li className={styles.li}><Link href="/experience">Experience</Link></li>
-                    <li className={styles.li}><Link href="/works">Projects</Link></li>
-                    <li className={styles.li}><Link href="/skills">Skills</Link></li>
-                    <li className={styles.li}><Link href="/testimonials">Testimonials</Link></li>
-                    <li className={styles.li}><Link href="/contact"> Contact</Link></li>
-                </ul>
-                <button className={styles.resume}>Resume</button>
-            </div>
-        </div>
+        <Navbar expand="lg">
+            <Container className={styles.sidebar}>
+                <Navbar.Brand href="/" className={styles.li}>Ijeoma's portfolio</Navbar.Brand>
+                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="/experience" className={styles.li}>Experience</Nav.Link>
+                        <Nav.Link href="/works" className={styles.li}>Projects</Nav.Link>
+                        <Nav.Link href="/skills" className={styles.li}>Skills</Nav.Link>
+                        <Nav.Link href="/testimonials" className={styles.li}>Testimonials</Nav.Link>
+                        <Nav.Link href="/contact" className={styles.li}>Contact</Nav.Link>
+                        <button className={styles.resume}>Resume </button>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 

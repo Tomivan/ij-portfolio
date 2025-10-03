@@ -1,19 +1,13 @@
 .sidebar{
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
 }
-.right {
-    display: flex;
+.li{
+    margin-right: 2em;
+    text-decoration: none;
+    color: black;
 }
-.ul {
-    display: flex;
-    list-style-type: none;
-    padding-top: 0.5em;
-}
-.li {
-    padding-right: 1em;
-}
-.li:hover {
+.li:hover{
     color: #1193d4;
 }
 .resume {
@@ -23,4 +17,5 @@
     border-radius: 5px;
     padding: 0.5em 1em;
     width: 10vw;
+    height: 7vh;
 }

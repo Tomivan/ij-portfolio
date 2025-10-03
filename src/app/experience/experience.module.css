@@ -1,0 +1,37 @@
+.padding {
+    padding: 1em;
+    background: #f6f7f8;
+}
+.top {
+    padding: 1em;
+    display: flex;
+    background: #f6f7f8;
+}
+.top-right {
+    margin-left: 5%;
+}
+.span {
+    color: #1193d4;
+    margin: 2% 0;
+}
+.bottom {
+    padding: 1em;
+    margin-top: 3%;
+}
+.h2 {
+    text-align: center;
+}
+.experience {
+    display: flex;
+    margin: 3% 0 0 12%;
+}
+.experience-right {
+    margin-left: 5%;
+}
+.icon {
+    background: #f6f7f8;
+    color: #1193d4;
+    padding: 0.7em;
+    margin-top: 2%;
+    border-radius: 5px;
+}
