@@ -1,23 +1,110 @@
-.skills {
+.skills{
     padding: 1em;
 }
-.container{
-    padding: 0 4em;
+
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.skillsContainer h2{
-    margin-top: 3%;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #1193d4;
+
+.container h1, 
+.container h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #1193d4;
+    padding-bottom: 0.5rem;
 }
+
+.skillsContainer {
+    margin-bottom: 3rem;
+}
+
 .skillsCards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
+
 .skill {
-    width: 30vw;
-    padding: 0.3em;
-    margin-right: 3%;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #0070f3;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skill p {
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.educationSection {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border-radius: 10px;
-    background: #ffffff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.educationCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.educationCard h3 {
+    margin: 0 0 0.5rem 0;
+    color: #1193d4;
+}
+
+.institution {
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
+.certificationsSection {
+    margin: 3rem 0;
+}
+
+.certificationsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.certification {
+    background: #e8f4ff;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #28a745;
+}
+
+.certification p {
+    margin: 0;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .skillsCards,
+    .certificationsList {
+        grid-template-columns: 1fr;
+    }
+    
+    .educationCard {
+        padding: 1rem;
+    }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import Sidebar from '../components/sidebar/sidebar.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -29,10 +30,16 @@ const Contact = () => {
                 </form>
                 <div className={styles.others}>
                     <h2>Other Ways to Connect</h2>
-                    <FontAwesomeIcon icon={faLinkedin} />
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <Link href="https://www.linkedin.com/in/ijeoma-ejinwa-aa0446180 " target="_blank" className={styles.socials}>
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                    <Link href="https://twitter.com/iejinwa" target="_blank" className={styles.socials}>
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </Link>
+                    <p><strong>Phone Number</strong></p>
+                    <p> +234 8032742339</p>
                     <p><strong>Email</strong></p>
-                    <p>iejinwa@gmail.com</p>
+                    <p>ijeomaejinwa32@gmail.com</p>
                 </div>
             </div>
         </div>
