@@ -118,7 +118,6 @@ const Works = () => {
                     ))}
                 </div>
 
-                {/* Additional Experience Section */}
                 <div className={styles.additionalInfo}>
                     <h2>Additional Experience</h2>
                     <div className={styles.additionalList}>

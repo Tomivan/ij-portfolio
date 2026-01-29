@@ -42,3 +42,99 @@
     color: #1193d4;
     text-decoration: none;
 }
+.successMessage {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+}
+
+.errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+}
+
+.send:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.socials:hover {
+    background-color: #0070f3;
+    color: white;
+    border-color: #0070f3;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infoItem {
+    margin-bottom: 1rem;
+}
+
+.infoItem p {
+    margin: 0.25rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8%;
+    }
+    
+    .form {
+        width: 60vw;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    
+    .send {
+        width: 60vw;
+    }
+    
+    .contactTop {
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+    
+    .form {
+        width: 90vw;
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+    
+    .send {
+        width: 90vw;
+    }
+    
+    .contactTop {
+        margin-top: 10%;
+    }
+}
