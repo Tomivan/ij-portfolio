@@ -1,9 +1,8 @@
 .padding {
     padding: 1em;
-    background: #f6f7f8;
 }
 .top {
-    padding: 1em;
+    padding: 2em;
     display: flex;
     background: #f6f7f8;
 }
