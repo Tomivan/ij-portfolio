@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Sidebar from '../components/sidebar/sidebar.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faFacebook, faMedium } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
 import styles from './contact.module.css';
 
@@ -92,8 +92,9 @@ const Contact = () => {
             <Sidebar />
             <div className={styles.contactTop}>
                 <h1>Get In Touch</h1>
-                <p>I'm currently available for new opportunities. Whether you have a project to discuss or just <br />
-                want to say hi, my inbox is always open.</p>
+                <p>I’m open to new opportunities. Whether it’s a project you’d like to collaborate on or 
+                    just to connect, let's create something together.
+                </p>
             </div>
             
             {/* Success Message */}
@@ -171,9 +172,13 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faLinkedin} />
                             <span>LinkedIn</span>
                         </Link>
-                        <Link href="https://twitter.com/iejinwa" target="_blank" className={styles.socials}>
-                            <FontAwesomeIcon icon={faTwitter} />
-                            <span>Twitter</span>
+                        <Link href="https://web.facebook.com/IjeomaEjinwaOfficial" target="_blank" className={styles.socials}>
+                            <FontAwesomeIcon icon={faFacebook} />
+                            <span>Facebook</span>
+                        </Link>
+                        <Link href="https://medium.com/@ijeomaejinwa32" target="_blank" className={styles.socials}>
+                            <FontAwesomeIcon icon={faMedium} />
+                            <span>Medium</span>
                         </Link>
                     </div>
                     

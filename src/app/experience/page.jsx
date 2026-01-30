@@ -20,7 +20,7 @@ const Experience = () => {
                     <p className={styles.span}>Community Manager, Data Analyst and Digital Strategist</p>
                     <p>Results-driven Community Manager and Digital Strategist with strong experience in 
                         managing online communities, executing digital campaigns and delivering data-informed 
-                        communication strategies. Currently at Interactive CT, where I oversee community 
+                        communication strategies. Recently worked at Interactive CT, where I oversaw community 
                         engagement, cross-platform content execution, and performance reporting for large-scale 
                         digital projects.
                     </p>

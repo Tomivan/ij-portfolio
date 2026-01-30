@@ -54,25 +54,6 @@ const Works = () => {
             description: "Designed and executed digital campaigns for community-focused initiatives.",
             category: "Community Engagement"
         },
-        {
-            id: 7,
-            brand: "Various FMCG Brands",
-            title: "Community Management",
-            period: "Various Projects",
-            description: "Community Management for youth-focused, social-impact and FMCG campaigns across Instagram, TikTok, Facebook and X/Twitter.",
-            category: "Community Management"
-        }
-    ];
-
-    const volunteerWork = [
-        {
-            id: 1,
-            brand: "Jane and Janet Show",
-            title: "Co-host & Co-producer",
-            period: "Nov 2017 – Nov 2019",
-            description: "Co-produced 53 episodes and contributed to creative direction. Increased the show's relevance and audience engagement.",
-            category: "Media Production"
-        }
     ];
 
     return(
@@ -84,7 +65,7 @@ const Works = () => {
             </div>
             
             <div className={styles.workBottom}>
-                <h2>Projects</h2>
+                <h2>Projects and Volunteer Work</h2>
                 <div className={styles.projectsGrid}>
                     {projects.map((project) => (
                         <div key={project.id} className={styles.card}>
@@ -101,7 +82,7 @@ const Works = () => {
                     ))}
                 </div>
 
-                <h2 className={styles.sectionTitle}>Volunteer Work</h2>
+                {/* <h2 className={styles.sectionTitle}>Volunteer Work</h2>
                 <div className={styles.projectsGrid}>
                     {volunteerWork.map((work) => (
                         <div key={work.id} className={styles.card}>
@@ -116,22 +97,32 @@ const Works = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
 
                 <div className={styles.additionalInfo}>
                     <h2>Additional Experience</h2>
                     <div className={styles.additionalList}>
                         <div className={styles.additionalItem}>
                             <h4>Published Writer</h4>
-                            <p>Medium articles exploring digital culture, feminism, and societal insights</p>
+                            <p>Published original articles on Medium, sharing clear and practical insights 
+                                on digital culture, conflict resolution, feminism and community building 
+                                with a growing audience.
+                            </p>
                         </div>
                         <div className={styles.additionalItem}>
                             <h4>Event Organizer</h4>
-                            <p>Large-scale Twitter Spaces/Webinars featuring global experts across leadership, digital transformation and entrepreneurship topics</p>
+                            <p>Organized and supported both online and in-person events, managing planning, 
+                                coordination, promotion and execution to deliver smooth, engaging experiences 
+                                for participants.
+                            </p>
                         </div>
                         <div className={styles.additionalItem}>
                             <h4>Brand Development</h4>
-                            <p>Created comprehensive Brand Style Kits and Digital Strategy Plans</p>
+                            <p>Supported brand development by shaping clear brand messaging and voice 
+                                across digital platforms. Also helped ensure consistency in how brands 
+                                communicate, collaborate with teams on content and campaigns and use 
+                                community engagement to build trust and strengthen brand perception.
+                            </p>
                         </div>
                     </div>
                 </div>
